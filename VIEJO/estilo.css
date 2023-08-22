@@ -2,3 +2,5 @@
 .horarios{font-size: 24px; color: green; text-align: center } /* HORARIOS */
 #cerrado{font-size: 24px; color: red; text-align: center} /* LOS DOMINGOS NO SE LABURA */
 .divheader{display: flex; justify-content: center;}
+.header{background-color: grey; height: 100%; width: 100%;}
+.footer{background-color: grey; height: 100%; width: 100%;}

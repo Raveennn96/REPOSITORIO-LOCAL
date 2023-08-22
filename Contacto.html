@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="estilo.css">
-        <p>Calzados Osiris - De la Nación 345 - San Nicolás de los Arroyos - (336-4575593)</p>
-    </head>
-    <body>
-        <img src="osiriscalzadosbanner.png" width="600" height="100" alt="BANNER"></img>
-        <table border="2">
-            <td><a href="Inicio.html">Inicio</a></td>
-            <td><a href="Productos.html">Productos</a></td>
-            <td><a href="Quienessomos.html">Quienes somos</a></td>
-            <td><a href="Contacto.html">Contacto</a></td>
-            <td><a href="TAREA CLASES.html">TAREA CLASES</a></td>
-            <td><a href="Horariosdeatencion.html">Horarios de atención</a></td>
-            <td><a href="nav.html">BARRITA</a></td>
-        </table>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calzados Osiris</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="BARRA NUEVA.html" class="logo nav-link">OSIRIS LOGO</a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <a href="Index.html" class="nav-menu-link nav-link">Inicio</a>
+              </li>
+          <li class="nav-menu-item">
+            <a href="Catalogo.html" class="nav-menu-link nav-link">Catálogo</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="Contacto.html" class="nav-menu-link nav-link">Contacto</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="Quienessomos.html" class="nav-menu-link nav-link">Quienes somos</a>
+          </li>
+        </ul>
+    </header>
+    <main>
         <h1>Contacto</h1>
-        <form method="" action="">
+        <div class="formulario">
+        <form method="" action="" style="border: 3px;">
             Nombre <input type="text" name="Nombre"><br>
             Apellido <input type="text" name="Apellido"><br>
             Correo Electronico <input type="text" name="Correo Electronico"><br>
@@ -30,5 +52,51 @@
             <input type="reset" value="Vaciar"></input>
         </br>
         </form>
+        </div>
+        <h1>HORARIOS DE ATENCIÓN</h1>
+        <table class="HORARIOSTABLA" border="2">
+
+            <tr>
+            <th> Días </th>
+            <th> Horarios </th> 
+            </tr>
+            <tr>
+            <td class="dias"><strong> Lunes </strong></td>
+            <td class="horarios">08:00 a 12:30<br>
+                16:30:20:30</td>
+            <tr>
+            <td class="dias"><strong>Martes</strong></td>
+            <td class="horarios">08:00 a 12:30<br>
+                16:30:20:30</td>
+            </tr>
+            <tr>
+            <td class="dias"><strong>Miércoles</strong></td>
+            <td class="horarios">08:00 a 12:30<br>
+                16:30:20:30</td>
+            </tr>
+            <tr>
+            <td class="dias"><strong>Jueves</strong></td>
+            <td class="horarios">08:00 a 12:30<br>
+                16:30:20:30</td>
+            </tr>
+            <tr>
+            <td class="dias"><strong>Viernes</strong></td>
+            <td class="horarios">08:00 a 12:30<br>
+            16:30:20:30</td>
+
+            </tr>
+            <tr>
+            <td class="dias"><strong>Sábado</strong></td>
+            <td class="horarios">8:00 a 12:30</td>
+            </tr>
+            <tr>
+            <td class="dias"><strong>Domingo</strong></td>
+            <td id="cerrado">Cerrado</td>
+            </tr>
+          
+          </table>
+    </main>
+  </body>
+  <footer class="footer"> <p> Copyright © Calzados Osiris es una marca registrada, todos los derechos quedan reservados - De la Nación 345 - San Nicolás de los Arroyos - CP 2900 - (336-4575593) </p> </footer>
     </body>
 </html>
