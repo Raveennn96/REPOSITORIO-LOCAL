@@ -36,22 +36,60 @@
         </ul>
     </header>
     <main>
-        <h1>Contacto</h1>
+        <h1>¿Tiene alguna duda y/o consulta? Dejanos tu mensaje!</h1>
         <div class="formulario">
-        <form method="" action="" style="border: 3px;">
-            Nombre <input type="text" name="Nombre"><br>
-            Apellido <input type="text" name="Apellido"><br>
-            Correo Electronico <input type="text" name="Correo Electronico"><br>
-            Indique su sexo:<br>
-            Masculino: <input type="radio" name="sexo"><br>
-            Femenino: <input type="radio" name="sexo"><br>
-            Otro: <input type="radio" name="sexo"><br>
-            Dejanos tu mensaje: <br>
-            <textarea cols="50" rows="10"></textarea><br>
-            <input type="submit" value="Enviar"></input>
-            <input type="reset" value="Vaciar"></input>
-        </br>
-        </form>
+          <form action="action_page.php">
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="fname" name="Nombre" placeholder="Tu nombre...">
+        
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="lname" name="Apellido" placeholder="Tu apellido...">
+
+            <label for="sexo">Indique su sexo</label>
+            <select id="Sexo" name="Sexo">
+              <option value="Indique su sexo...">Indique su sexo...</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>
+
+            <label for="Provincia">Provincia</label>
+            <select id="Provincia" name="Provincia">
+              <option value="Seleccione su provincia">Seleccione su provincia</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="CABA">CABA</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Ríos">Entre Ríos</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquén">Neuquén</option>
+              <option value="Río Negro">Río Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Santiago del Estero">Santiago del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucumán">Tucumán</option>
+              
+            </select>
+        
+            <label for="Mensaje">Dejanos tu mensaje</label>
+            <textarea id="subject" name="subject" placeholder="Escribe tu mensaje, duda o consulta..." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
         </div>
         <h1>HORARIOS DE ATENCIÓN</h1>
         <table class="HORARIOSTABLA" border="2">
