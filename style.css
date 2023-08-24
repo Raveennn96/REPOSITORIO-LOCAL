@@ -135,7 +135,7 @@
     background-color: #a1a1a1; 
     width: 100%; 
     margin:0 auto;
-    position: fixed;
+    position:fixed;
     padding:0%;
 }
 
@@ -153,13 +153,14 @@ input[type=text], select, textarea {
 .formulario {
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 33.33%;
   box-sizing: border-box;
   border-width: 3px; 
   border-color: #a0a0a0;
   padding: 20px;
   background-color: #e4e4e4;
+  float: left;
 } 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #a1a1a1;
   color: white;
@@ -173,3 +174,16 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #4b4b4b;
 }
+.contacto {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 33.33%;
+  box-sizing: border-box;
+  border-width: 3px; 
+  border-color: #a0a0a0;
+  padding: 10px;
+  background-color: #e4e4e4;
+  float: right;
+  text-align: center;
+  line-height: 2.5em;
+} 
