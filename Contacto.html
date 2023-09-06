@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calzados Osiris</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacto.css" />
     <script
       src="https://kit.fontawesome.com/7e5b2d153f.js"
       crossorigin="anonymous"
     ></script>
     <script defer src="index.js"></script>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <p id="popup-message">Gracias por contactarte con nosotros, responderemos a la brevedad.</p>
+        <button type="submit" id="close-button">Cerrar</button>
+      </div>
+    </div>
   </head>
-  <body>
     <header class="header">
       <nav class="nav">
-        <a href="BARRA NUEVA.html" class="logo nav-link">OSIRIS LOGO</a>
+        <a href="Index.html" class="logo nav-link"><img src="osirislogo2 (2).jpg"></img></a>
         <button class="nav-toggle" aria-label="Abrir menú">
           <i class="fas fa-bars"></i>
         </button>
@@ -34,16 +39,21 @@
             <a href="Quienessomos.html" class="nav-menu-link nav-link">Quienes somos</a>
           </li>
         </ul>
+      </nav>
     </header>
+<body>
     <main>
         <h1>¿Tiene alguna duda y/o consulta? Dejanos tu mensaje!</h1>
         <div class="formulario">
-          <form action="action_page.php">
+          <form action="action_page.php" id="formulario-contacto">
             <label for="Nombre">Nombre</label>
             <input type="text" id="fname" name="Nombre" placeholder="Tu nombre...">
         
             <label for="Apellido">Apellido</label>
             <input type="text" id="lname" name="Apellido" placeholder="Tu apellido...">
+
+            <label for="Email">Correo Electronico</label>
+            <input type="Email" id="Email" name="email" placeholder="Tu email...">
 
             <label for="sexo">Indique su sexo</label>
             <select id="Sexo" name="Sexo">
@@ -80,14 +90,10 @@
               <option value="Santiago del Estero">Santiago del Estero</option>
               <option value="Tierra del Fuego">Tierra del Fuego</option>
               <option value="Tucumán">Tucumán</option>
-              
             </select>
-        
             <label for="Mensaje">Dejanos tu mensaje</label>
             <textarea id="subject" name="subject" placeholder="Escribe tu mensaje, duda o consulta..." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        
+            <button type="submit" value="submit" id="submit-button">Enviar</button>
           </form>
         </div>
         <div class="contacto">
@@ -99,12 +105,9 @@
           <p>Domingos:</p>
           <p>Cerrado</p>
           <h2> O a través de nuestras redes sociales</h2>
-          <a title="Instagram" href="http://www.instagram.com/osiriscalzados"><img src="INSTAGRAM.png" height="150" width="200"></img></a>
+          <a title="Instagram" href="https://www.instagram.com/osiriszapatos/"><img src="INSTAGRAM.png" height="150" width="200"></img></a>
           <a title="Whatsapp" href=""></a><img src="WHATSAPP2.png" height="150" width="200"></img>
-
         </div>
     </main>
-  </body>
-  <footer class="footer"> <p> Copyright © Calzados Osiris es una marca registrada, todos los derechos quedan reservados - De la Nación 345 - San Nicolás de los Arroyos - CP 2900 - (336-4575593) </p> </footer>
-    </body>
+</body>
 </html>
